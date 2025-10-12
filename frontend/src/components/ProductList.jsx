@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const { user } = useAuth();
+  const { user, updateCartCount } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,6 +28,8 @@ const ProductList = () => {
     }
     try {
       await axios.post('http://localhost:8000/cart/', { product_id: productId, quantity: 1 });
+      // Update cart count in navbar
+      updateCartCount();
       alert('Added to cart');
     } catch (error) {
       alert('Error adding to cart');

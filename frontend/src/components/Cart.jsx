@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
+  const { updateCartCount } = useAuth();
 
   useEffect(() => {
     const fetchCart = async () => {
@@ -21,6 +23,8 @@ const Cart = () => {
     try {
       await axios.put(`http://localhost:8000/cart/${itemId}`, { quantity });
       setCartItems(cartItems.map(item => item.id === itemId ? { ...item, quantity } : item));
+      // Update cart count in navbar
+      updateCartCount();
     } catch (error) {
       alert('Error updating quantity');
     }
@@ -30,6 +34,8 @@ const Cart = () => {
     try {
       await axios.delete(`http://localhost:8000/cart/${itemId}`);
       setCartItems(cartItems.filter(item => item.id !== itemId));
+      // Update cart count in navbar
+      updateCartCount();
     } catch (error) {
       alert('Error removing item');
     }

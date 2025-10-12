@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
 
 const Checkout = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
+  const { updateCartCount } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -29,6 +31,8 @@ const Checkout = () => {
         price: item.product_price,
       }));
       await axios.post('http://localhost:8000/orders/checkout', { items: orderItems });
+      // Update cart count after order (cart gets cleared)
+      updateCartCount();
       alert('Order placed successfully!');
       navigate('/orders');
     } catch (error) {

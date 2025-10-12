@@ -74,7 +74,7 @@ def checkout(order: OrderCreate, db: Session = Depends(get_db), current_user: Us
 
 @router.get("/", response_model=List[OrderResponse])
 def get_orders(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
-    orders = db.query(Order).filter(Order.user_id == current_user.id).all()
+    orders = db.query(Order).filter(Order.user_id == current_user.id).order_by(Order.created_at.desc()).all()
     result = []
     for order in orders:
         items = []

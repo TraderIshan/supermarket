@@ -10,6 +10,7 @@ export function useAuth() {
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -69,10 +70,32 @@ export function AuthProvider({ children }) {
     }
   };
 
+  // Function to fetch and update cart count
+  const updateCartCount = async () => {
+    if (user) {
+      try {
+        const response = await axios.get('http://localhost:8000/cart/');
+        const totalItems = response.data.reduce((sum, item) => sum + item.quantity, 0);
+        setCartCount(totalItems);
+      } catch (error) {
+        console.error('Error fetching cart count:', error);
+        setCartCount(0);
+      }
+    } else {
+      setCartCount(0);
+    }
+  };
+
+  // Update cart count when user changes
+  useEffect(() => {
+    updateCartCount();
+  }, [user]);
+
   const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     setUser(null);
+    setCartCount(0);
   };
 
   axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
@@ -82,7 +105,9 @@ export function AuthProvider({ children }) {
     login,
     register,
     logout,
-    loading
+    loading,
+    cartCount,
+    updateCartCount
   };
 
   return (
